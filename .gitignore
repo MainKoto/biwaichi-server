@@ -1,0 +1,9 @@
+# Node.js dependencies
+node_modules/
+
+# ビルド成果物（もしあれば）
+dist/
+build/
+
+# 環境ファイル
+.env
