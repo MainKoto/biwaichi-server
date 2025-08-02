@@ -18,3 +18,15 @@
     "typescript": "^5.8.3"
   }
 }
+
+{
+  "scripts": {
+    // 既存の scripts の下に追記
+    "start": "ts-node src/index.ts"
+  },
+  "dependencies": {
+    // ts-node を dependencies に入れておきます
+    "ts-node": "^10.x"
+    // （他にも express, socket.io など必要なもの）
+  }
+}
