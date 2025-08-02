@@ -1,21 +1,19 @@
 {
-  "name": "server",
+  "name": "biwaichi-share-server",
   "version": "1.0.0",
+  "description": "Socket.IO server for Biwaichi Share",
+  "main": "index.js",           ← ここで必ずカンマ
   "scripts": {
     "dev": "ts-node src/index.ts",
-    "start": "ts-node src/index.ts"
+    "start": "node dist/index.js" ← 最後のプロパティにはカンマを入れない
   },
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^4.18.2",
-    "socket.io": "^4.8.1"
-    "ts-node": "^10.x"
+    "socket.io": "^4.5.1"
   },
   "devDependencies": {
-    "@types/cors": "^2.8.19",
-    "@types/express": "^4.17.17",
-    "@types/node": "^24.1.0",
-    "ts-node": "^10.9.2",
-    "typescript": "^5.8.3"
+    "ts-node": "^10.9.1",
+    "typescript": "^4.7.4"
   }
 }
